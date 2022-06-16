@@ -5,9 +5,41 @@
 
 body
     background-color: #292929
-    color: #fff
+    color: #000
+    //display: flex
+    //justify-content: center
+    //align-items: center
+    //min-height: 100vh
+
+main
+    width: 190px
+    height: 254px
+    background: #fff
     display: flex
-    justify-content: center
-    align-items: center
-    min-height: 100vh
+    place-content: center
+    place-items: center
+    overflow: hidden
+    border-radius: 20px
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 100px
+        background: linear-gradient(180deg, #00b7ff, #ff30ff)
+        //background-image: gradient(linear, left top, left bottom, from (rgba(0,183,255), to(rgba(255,48,255))))
+
+        //background-image: linear-gradeint(180deg,rgba(0,183,255), rgba(255,28,255))
+        background: linear-gradient(180deg, #00b7ff, #ff1cff)
+        height: 130%
+        //animation: rotacionImg 3s linear infinite
+        transition: all .2s linear
+        @keyframes rotacionImg
+            0%
+                transform: rotate(0deg)
+            100%
+                transform: rotate(360deg)
+    &::after
+        content: ''
+    h2
+        z-index: 1
 
