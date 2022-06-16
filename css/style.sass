@@ -6,10 +6,10 @@
 body
     background-color: #292929
     color: #000
-    //display: flex
-    //justify-content: center
-    //align-items: center
-    //min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
 
 main
     width: 190px
@@ -24,14 +24,11 @@ main
     &::before
         content: ''
         position: absolute
-        width: 100px
-        background: linear-gradient(180deg, #00b7ff, #ff30ff)
-        //background-image: gradient(linear, left top, left bottom, from (rgba(0,183,255), to(rgba(255,48,255))))
-
-        //background-image: linear-gradeint(180deg,rgba(0,183,255), rgba(255,28,255))
+        width: 150px
+        background: linear-gradient(180deg, #00b7ff, #ff30ff)        
         background: linear-gradient(180deg, #00b7ff, #ff1cff)
         height: 130%
-        //animation: rotacionImg 3s linear infinite
+        animation: rotacionImg 5s linear infinite
         transition: all .2s linear
         @keyframes rotacionImg
             0%
@@ -40,6 +37,11 @@ main
                 transform: rotate(360deg)
     &::after
         content: ''
+        position: absolute
+        background: #fff
+        inset: 8px //Pone los colores a los bordes
+        border-radius: 15px
+
     h2
         z-index: 1
 
