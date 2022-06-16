@@ -1,5 +1,5 @@
-#
+# Tarjeta animada con fondo rotante
 
 
 
-*[En proceso*
+![Muestra](./img/muestra-ricky.gif "Muestra de tarjeta animada")
